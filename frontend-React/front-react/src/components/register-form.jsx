@@ -62,7 +62,7 @@ export default function RegisterForm() {
     return(
        <section style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column", height: "100vh"}}>
             <div className="login-title">
-                <h2 className="michroma-regular" style={{marginLeft: "200px"}}>Sistema de gestión de Agenda</h2>
+                <h2 className="michroma-regular" >Sistema de gestión de Agenda</h2>
             </div>
             <div className="login-card-container">
                 <div className="login-form">
