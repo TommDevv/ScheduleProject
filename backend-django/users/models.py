@@ -19,9 +19,6 @@ class UsuariosManager(BaseUserManager):
 
 
 class Usuarios(AbstractBaseUser, PermissionsMixin):
-    last_login = None
-    is_superuser = None
-    is_staff = None
     id_user = models.AutoField(primary_key=True)
     nickname = models.CharField(unique=True, max_length=100)
     password = models.CharField(max_length=200, db_column='contrasena')

@@ -96,15 +96,30 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+# Db de desarrollo local.
+# DATABASES = {
+#     'default': {
+#         'ENGINE': os.getenv("DB_ENGINE", "django.db.backends.postgresql"),
+#         'NAME': os.getenv("DB_NAME", "login-test"),
+#         'USER': os.getenv("DB_USER", "postgres"),
+#         'PASSWORD': os.getenv("DB_PASSWORD"),
+#         'HOST': os.getenv("DB_HOST", "localhost"),
+#         'PORT': os.getenv("DB_PORT", "5433"),
+#         'OPTIONS': {
+#             'client_encoding': 'UTF8',
+#         },
+#     }
+# }
 
+# Db de producción en Render
 DATABASES = {
     'default': {
         'ENGINE': os.getenv("DB_ENGINE", "django.db.backends.postgresql"),
-        'NAME': os.getenv("DB_NAME", "login-test"),
-        'USER': os.getenv("DB_USER", "postgres"),
-        'PASSWORD': os.getenv("DB_PASSWORD"),
-        'HOST': os.getenv("DB_HOST", "localhost"),
-        'PORT': os.getenv("DB_PORT", "5433"),
+        'NAME': os.getenv("DB_NAME", "schedulebd"),
+        'USER': os.getenv("DB_USER", "admin"),
+        'PASSWORD': os.getenv("DB_PASSWORD", "T6ywFfiADmGOgJJ9J4D5Copg3ZXaFmZa"),
+        'HOST': os.getenv("DB_HOST", "dpg-d84c9sek1jcs738qc1q0-a.ohio-postgres.render.com"),
+        'PORT': os.getenv("DB_PORT", "5432"),
         'OPTIONS': {
             'client_encoding': 'UTF8',
         },

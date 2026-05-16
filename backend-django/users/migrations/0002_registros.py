@@ -22,4 +22,8 @@ class Migration(migrations.Migration):
                 'managed': False,
             },
         ),
+        migrations.AlterModelOptions(
+            name='registros',
+            options={'managed': True},
+        ),
     ]
