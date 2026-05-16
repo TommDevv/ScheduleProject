@@ -51,13 +51,13 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
 ]
 
 CORS_ALLOWED_ORIGINS=[
@@ -67,14 +67,25 @@ CORS_ALLOWED_ORIGINS=[
     "http://127.0.0.1:3000",
 ]
 
-##Permitir todos los origenes (no recomendado para producción)
-## Configurado para pruebas, desactivar y configurar manualmente en producción real.
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOW_CREDENTIALS = False
 
-CORS_ALLOW_ALL_ORIGINS = True
+extra_cors_origins = os.getenv("CORS_ALLOWED_ORIGINS", "")
+if extra_cors_origins:
+    CORS_ALLOWED_ORIGINS += [origin.strip() for origin in extra_cors_origins.split(",") if origin.strip()]
+
+frontend_url = os.getenv("FRONTEND_URL")
+if frontend_url:
+    CORS_ALLOWED_ORIGINS.append(frontend_url)
+
+csrf_trusted_origins = [origin for origin in CORS_ALLOWED_ORIGINS if origin.startswith("https://")]
+if csrf_trusted_origins:
+    CSRF_TRUSTED_ORIGINS = csrf_trusted_origins
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
     "authorization",
-    "Authorization"
+    "Authorization",
+    "content-type",
 ]
 
 ROOT_URLCONF = 'config.urls'
