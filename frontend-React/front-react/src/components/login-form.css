@@ -34,7 +34,7 @@
 }
 
 .form-button {
-    background-color: #000000;
+    background-color: #2051bd;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -60,3 +60,20 @@
     color: white;
     font-size: larger;
 }
+
+/* Ensure inner form content sits nicely inside the card and links are visible */
+.login-form{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 8px 12px 8px;
+}
+
+.form-links{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-top:20px;
+    text-align:center;
+    color: white;
+}
+.form-links a{ color: #cfe0ff; text-decoration:underline }

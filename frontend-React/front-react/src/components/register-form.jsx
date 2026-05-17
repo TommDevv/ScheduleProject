@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 import { request } from "../api/http";
 import './login-form.css'
 
@@ -66,7 +66,7 @@ export default function RegisterForm() {
             </div>
             <div className="login-card-container">
                 <div className="login-form">
-                    <h2>Registrar Usuario</h2>
+                    <h2 style={{marginTop:"20px"}}>Registrar Usuario</h2>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="user" className="input-label">Numero de Documento:</label>
                         <input 
@@ -121,8 +121,8 @@ export default function RegisterForm() {
                         <span className="error-message">{errorDisplay}</span>
                         <button type="submit" className="form-button">Registrar</button>
                     </form>
-                    <div style={{display: "flex", flexDirection: "row", textAlign: "center", marginTop: "20px"}}>
-                        <span>¿Ya tiene una cuenta? <a href="/">Inicie sesión aquí</a></span>
+                    <div className="form-links">
+                        <span>¿Ya tiene una cuenta? <Link to="/">Inicie sesión aquí</Link></span>
                     </div>
                 </div>
             </div>

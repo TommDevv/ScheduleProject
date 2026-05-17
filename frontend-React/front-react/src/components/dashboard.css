@@ -1,6 +1,6 @@
 .dashboard-page{
     min-height: 100vh;
-    background: linear-gradient(180deg, #edf2ff 0%, #f7f9fc 36%, #ffffff 100%);
+    background-color: rgb(53, 53, 97);
     padding-top: 100px;
     text-align: left;
 }
