@@ -35,7 +35,8 @@ export default function UserDropdown({ nombre, documento, onLogout }) {
                 height: '72px',
                 borderRadius: '9999px',
                 padding: '0',
-                backgroundColor: 'rgba(245, 238, 238, 0.96)',
+                backgroundColor: 'rgba(30, 41, 59, 0.96)',
+                border: '1px solid rgba(148, 163, 184, 0.18)',
             }}
         >
             <div
@@ -60,21 +61,22 @@ export default function UserDropdown({ nombre, documento, onLogout }) {
                         right: 0,
                         transformOrigin: 'top right',
                         marginTop: '8px',
-                        backgroundColor: '#fff',
-                        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)',
+                        backgroundColor: '#0f172a',
+                        boxShadow: '0 20px 40px rgba(2, 6, 23, 0.35)',
                         listStyle: 'none',
                         padding: '10px',
                         margin: 0,
                         zIndex: 1000,
                         width: '200px',
-                        color: '#333',
-                        borderRadius: '4px',
+                        color: '#e2e8f0',
+                        borderRadius: '12px',
+                        border: '1px solid rgba(148, 163, 184, 0.16)',
                     }}
                 >
                     <li><span style={{fontWeight:"bold"}}>Nombre:</span><p>{nombre}</p></li>
                     <li><span style={{fontWeight:"bold"}}>Documento:</span><p>{documento}</p></li>
                     <br></br>
-                    <li><button onClick={onLogout}>Cerrar Sesión</button></li>
+                    <li><button onClick={onLogout} style={{backgroundColor: '#7c3aed', color: '#ffffff', border: 'none'}}>Cerrar Sesión</button></li>
                 </ul>
             )}
         </div>

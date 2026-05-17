@@ -17,11 +17,14 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #475569;
+    background-color: #1e293b;
+    color: #e2e8f0;
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
     min-width: 300px;
+    color-scheme: dark;
 }
 
 .input-label {

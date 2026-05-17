@@ -11,7 +11,7 @@ import {BrowserRouter as Router, Routes , Route} from 'react-router-dom';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App app-shell">
       <Router>
         <Routes>
           <Route path="/" element={<LoginForm/>}/>

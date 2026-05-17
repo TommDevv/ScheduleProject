@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { requestLogin } from "../api/auth.service";
 import './login-form.css'
 
@@ -85,8 +85,8 @@ function LoginForm() {
                         <button type="submit" className="form-button">Ingresar</button>
                     </form>
                     <div style={{display: "flex", flexDirection: "row", textAlign: "center", marginTop: "20px"}}>
-                        <span>No tiene cuenta? <a href="/register">Regístrese aquí</a></span>
-                        <span>Olvidó su contraseña? <a href="/forgot-password">Restablecer aquí</a></span>
+                        <span>No tiene cuenta? <Link to="/register">Regístrese aquí</Link></span>
+                        <span>Olvidó su contraseña? <Link to="/forgot-password">Restablecer aquí</Link></span>
                     </div>
                 </div>
             </div>
