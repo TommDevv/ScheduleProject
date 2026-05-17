@@ -27,7 +27,7 @@ Una vez clonado el repositorio dirigrse al archivo ubicado en el siguiente direc
 
 Si desea probar unicamente el frontend dejar tal cual está, la configuración actual apunta al backend desplegado en render, sin embargo es posible que cause problemas por politicas de CORS dada la configuración de protección de endpoints del backend.
 
-En caso de querer hacer una ejecución completa del aplicativo es necesario cambiar la variable `apiUrl` por la direccion local en la que está corriendo el backend, como sugerencia se dejó comentada la direccion local por defecto que configura Django en el mismo archivo, por favor deje comentada la url del backend externo y quite la marca de comentarios de la url que está marcada como entorno local. En caso de desplegar el backend en una direccion o puerto personalizada es necesario configurarla en ese mismo archivo.
+En caso de querer hacer una ejecución completa del aplicativo es necesario cambiar la variable `urlApi` por la direccion local en la que está corriendo el backend, como sugerencia se dejó comentada la direccion local por defecto que configura Django en el mismo archivo, por favor deje comentada la url del backend externo y quite la marca de comentarios de la url que está marcada como entorno local. En caso de desplegar el backend en una direccion o puerto personalizada es necesario configurarla en ese mismo archivo.
 
 Una vez configurada la variable de entorno dirijase al directorio `/scheduleProject/frontend-React/front-react/` y abra allí una terminal en la que deberá ejecutar los siguientes comandos:
 ```bash
@@ -38,11 +38,11 @@ npm run dev
 ## 2.1 Base de datos
 Como requisito previo al despliegue del API es necesario tener una base de datos corriendo en el motor Postgress.
 
-El backend está configurado de manera que se conecte por defecto a la base de datos desplegada en render, por lo que puede omitir este paso si opta por no usar una base de datos propia.
+>El backend está configurado de manera que se conecte por defecto a la base de datos desplegada en render, por lo que puede omitir este paso si opta por no usar una base de datos propia.
 
 Para ello basta con crear una instancia de base de datos en la maquina local corriendo en el motor correspondiente o si lo prefiere en alguna plataforma de hosting web, el unico requisito es tener las credenciales a la mano.
 
-Una vez tenga la instancia desplegada deberá crear un archivo llamado `env` y guardarlo en la siguiente ruta `/scheduleProject/backend-django` y debe tener la siguiente estructura
+Una vez tenga la instancia desplegada deberá crear un archivo llamado `.env` y guardarlo en la siguiente ruta `/scheduleProject/backend-django` el cual debe tener la siguiente estructura:
 
 ```properties
 DEBUG=true
@@ -70,7 +70,7 @@ env\Scripts\activate
 ```
 a continuación notara que la ruta indicada en la terminal estará precedida por un **(env)** esto es el indicativo de que el entorno virtual fue activado correctamente. 
 
-una vez jaya terminado la ejecucion del programa puede desactivar el entorno con el comando:
+una vez haya terminado la ejecucion **completa** del aplicativo puede desactivar el entorno con el comando:
 ```bash
 deactivate
 ```
