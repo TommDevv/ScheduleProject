@@ -1,11 +1,8 @@
 .dashboard-page{
     min-height: 100vh;
-    background:
-        radial-gradient(circle at top left, rgba(124, 58, 237, 0.16), transparent 28%),
-        linear-gradient(180deg, #0f172a 0%, #111827 100%);
+    background: linear-gradient(180deg, #edf2ff 0%, #f7f9fc 36%, #ffffff 100%);
     padding-top: 100px;
     text-align: left;
-    color: #e2e8f0;
 }
 
 .dashboard-page .navbar{
@@ -14,9 +11,7 @@
     left: 0;
     width: 100vw;
     height: 100px;
-    background: rgba(15, 23, 42, 0.94);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+    background-color: rgb(53, 53, 97);
     z-index: 10;
     display: flex;
     align-items: center;
@@ -62,10 +57,10 @@
 
 .dashboard-summary,
 .agenda-section{
-    background: rgba(15, 23, 42, 0.82);
-    border: 1px solid rgba(148, 163, 184, 0.16);
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(32, 81, 189, 0.12);
     border-radius: 20px;
-    box-shadow: 0 16px 40px rgba(2, 6, 23, 0.28);
+    box-shadow: 0 16px 40px rgba(16, 24, 40, 0.08);
 }
 
 .dashboard-summary{
@@ -82,19 +77,19 @@
     letter-spacing: 0.12em;
     font-size: 0.76rem;
     font-weight: 700;
-    color: #a78bfa;
+    color: #2051bd;
 }
 
 .dashboard-summary h2,
 .agenda-header h3{
     margin: 0;
-    color: #f8fafc;
+    color: #0f172a;
 }
 
 .dashboard-description{
     margin: 12px 0 0;
     max-width: 760px;
-    color: #cbd5e1;
+    color: #475569;
 }
 
 .dashboard-stats{
@@ -105,22 +100,22 @@
 }
 
 .dashboard-stats article{
-    background: linear-gradient(180deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.95) 100%);
+    background: linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
     border-radius: 16px;
     padding: 16px;
-    border: 1px solid rgba(148, 163, 184, 0.14);
+    border: 1px solid rgba(32, 81, 189, 0.08);
 }
 
 .dashboard-stats span{
     display: block;
-    color: #94a3b8;
+    color: #64748b;
     font-size: 0.88rem;
     margin-bottom: 8px;
 }
 
 .dashboard-stats strong{
     font-size: 1.8rem;
-    color: #f8fafc;
+    color: #102a56;
 }
 
 .agenda-section{
@@ -138,12 +133,12 @@
 .agenda-action-button,
 .agenda-form-actions button,
 .navbar .navbar-user-panel button{
-    background: #7c3aed;
+    background: #2051bd;
     color: #ffffff;
     border: none;
     border-radius: 12px;
     padding: 0.8rem 1rem;
-    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.22);
+    box-shadow: 0 10px 24px rgba(32, 81, 189, 0.18);
 }
 
 .agenda-action-button:hover,
@@ -157,8 +152,8 @@
     margin-bottom: 18px;
     padding: 18px;
     border-radius: 16px;
-    background: rgba(30, 41, 59, 0.88);
-    border: 1px solid rgba(148, 163, 184, 0.16);
+    background: #f8fbff;
+    border: 1px solid rgba(32, 81, 189, 0.12);
 }
 
 .agenda-form-grid{
@@ -171,7 +166,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    color: #cbd5e1;
+    color: #334155;
     font-weight: 600;
 }
 
@@ -180,12 +175,12 @@
 .agenda-form-grid textarea{
     width: 100%;
     border-radius: 12px;
-    border: 1px solid #475569;
+    border: 1px solid #cbd5e1;
     padding: 0.8rem 0.9rem;
     font: inherit;
     box-sizing: border-box;
-    background: #0f172a;
-    color: #e2e8f0;
+    background: #ffffff;
+    color: #0f172a;
 }
 
 .agenda-form-grid textarea{
@@ -204,14 +199,14 @@
 }
 
 .secondary-button{
-    background: #334155 !important;
-    color: #e2e8f0 !important;
+    background: #e2e8f0 !important;
+    color: #0f172a !important;
     box-shadow: none !important;
 }
 
 .agenda-feedback{
     margin: 14px 0 0;
-    color: #c4b5fd;
+    color: #2051bd;
     font-weight: 600;
 }
 
@@ -227,20 +222,20 @@
 
 .agenda-table th,
 .agenda-table td{
-    border: 1px solid #334155;
+    border: 1px solid #dbe4f0;
     padding: 12px;
     vertical-align: top;
 }
 
 .agenda-table thead th{
-    background: #1e293b;
-    color: #f8fafc;
+    background: #eaf1ff;
+    color: #102a56;
     font-weight: 700;
 }
 
 .agenda-table tbody th{
-    background: #111827;
-    color: #cbd5e1;
+    background: #f8fbff;
+    color: #334155;
     width: 110px;
 }
 
@@ -249,17 +244,17 @@
     gap: 6px;
     padding: 10px;
     border-radius: 12px;
-    background: linear-gradient(180deg, rgba(124, 58, 237, 0.18) 0%, rgba(30, 41, 59, 0.96) 100%);
-    border: 1px solid rgba(124, 58, 237, 0.2);
+    background: linear-gradient(180deg, #dce8ff 0%, #edf4ff 100%);
+    border: 1px solid rgba(32, 81, 189, 0.16);
 }
 
 .agenda-cell-task strong{
-    color: #f8fafc;
+    color: #0f172a;
 }
 
 .agenda-cell-task span,
 .agenda-empty-slot{
-    color: #94a3b8;
+    color: #64748b;
     font-size: 0.92rem;
 }
 
@@ -318,7 +313,7 @@
 .dashboard-footer{
     margin-top: 24px;
     text-align: center;
-    color: #94a3b8;
+    color: #64748b;
     padding: 18px 0;
     font-size: 0.95rem;
 }
