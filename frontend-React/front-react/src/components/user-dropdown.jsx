@@ -74,7 +74,7 @@ export default function UserDropdown({ nombre, documento, onLogout }) {
                     <li><span style={{fontWeight:"bold"}}>Nombre:</span><p>{nombre}</p></li>
                     <li><span style={{fontWeight:"bold"}}>Documento:</span><p>{documento}</p></li>
                     <br></br>
-                    <li><button onClick={onLogout}>Cerrar Sesión</button></li>
+                    <li><button style={{backgroundColor:"black", color:"white"}} onClick={onLogout}>Cerrar Sesión</button></li>
                 </ul>
             )}
         </div>
