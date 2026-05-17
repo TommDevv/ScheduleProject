@@ -17,11 +17,18 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 4px;
     box-sizing: border-box;
     width: 100%;
     min-width: 300px;
+    background-color: #2b2b2b;
+    color: #f3f4f6;
+    caret-color: #f3f4f6;
+}
+
+.input-field::placeholder {
+    color: #c9c9c9;
 }
 
 .input-label {
@@ -34,7 +41,7 @@
 }
 
 .form-button {
-    background-color: #2051bd;
+    background-color: #000000;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -60,20 +67,4 @@
     color: white;
     font-size: larger;
 }
-
-/* Ensure inner form content sits nicely inside the card and links are visible */
-.login-form{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 6px 8px 12px 8px;
-}
-
-.form-links{
-    display:flex;
-    flex-direction:column;
-    gap:6px;
-    margin-top:20px;
-    text-align:center;
-    color: white;
-}
-.form-links a{ color: #cfe0ff; text-decoration:underline }
+ 

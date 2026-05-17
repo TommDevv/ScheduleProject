@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {useNavigate, Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import { request } from "../api/http";
 import './login-form.css'
 
@@ -59,14 +59,14 @@ export default function RegisterForm() {
         }
     }
 
-    return(
-       <section style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column", height: "100vh"}}>
+     return(
+         <section style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column", minHeight: "100vh", height: "auto", padding: "40px 0", boxSizing: "border-box"}}>
             <div className="login-title">
                 <h2 className="michroma-regular" >Sistema de gestión de Agenda</h2>
             </div>
             <div className="login-card-container">
-                <div className="login-form">
-                    <h2 style={{marginTop:"20px"}}>Registrar Usuario</h2>
+                <div className="login-form" style={{justifyContent:"center"}}>
+                    <h2 >Registrar Usuario</h2>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="user" className="input-label">Numero de Documento:</label>
                         <input 
@@ -121,8 +121,8 @@ export default function RegisterForm() {
                         <span className="error-message">{errorDisplay}</span>
                         <button type="submit" className="form-button">Registrar</button>
                     </form>
-                    <div className="form-links">
-                        <span>¿Ya tiene una cuenta? <Link to="/">Inicie sesión aquí</Link></span>
+                    <div style={{display: "flex", flexDirection: "row", textAlign: "center", marginTop: "20px"}}>
+                        <span>¿Ya tiene una cuenta? <a href="/">Inicie sesión aquí</a></span>
                     </div>
                 </div>
             </div>

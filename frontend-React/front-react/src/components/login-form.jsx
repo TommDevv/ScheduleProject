@@ -53,13 +53,13 @@ function LoginForm() {
     }
 
     return (
-        <section style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column", height: "100vh"}}>
+        <section style={{justifyContent: "center", alignItems: "center", display: "flex", flexDirection: "column", minHeight: "100vh", height: "auto", padding: "40px 0", boxSizing: "border-box"}}>
             <div className="login-title">
                 <h2 className="michroma-regular">Sistema de gestión de Agenda</h2>
             </div>
             <div className="login-card-container">
                 <div className="login-form">
-                    <h2>Inicio de Sesión</h2>
+                    <h2 style={{marginLeft:"110px"}}>Inicio de Sesión</h2>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="user" className="input-label">Usuario:</label>
                         <input 
