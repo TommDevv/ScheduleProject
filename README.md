@@ -4,7 +4,7 @@ El proyecto coinsiste de un organizador de agenda semanal implementando un siste
 
 La principal finalidad del planteamiento de este enfoque fue extender los elementos aprendidos del curso a un aplicativo fullstack mediante la implementación de un sistema de inicio de sesión mediante JWT y consumo de api usando hooks y herramientas proporcionadas por el framework ReactJs así como protección de endopoints mediante CORS-policy.
 
-> **Nota**: el despliegue web del aplicativo se hizo mediante la plataforma **Render** dada la facilidad que ofrece para despliegue de API y base de datos integrada. Para probar la versión desplegada en la web cree un usuario mediante la interfaz e inicie sesión.
+> **Nota**: el despliegue web del aplicativo se hizo mediante la plataforma **Render** dada la facilidad que ofrece para despliegue de API y base de datos integrada. Para probar la versión desplegada en la web cree un usuario mediante la interfaz e inicie sesión. El aplicativo entra en estado de suspensión tras un periodo de inactividad lo que puede causar realentizaciones al usar el aplicativo en determinaddas ocasiones. Se solicita encarecidamente esperar unos segundos si es la primera vez que se inicia sesión en el dia.
 
 ## Integrantes del grupo: 
 * Tomás Alejandro Delgado Ortíz - 20221020045 tadelgadoo@udistrital.edu.co
